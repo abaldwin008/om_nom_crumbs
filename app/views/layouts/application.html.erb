@@ -3,17 +3,20 @@
   <head>
     <title><%= yield(:title) %> | Om Nom Crumbs</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
   </head>
-
   <body>
     <%= render 'layouts/header' %>
-    <%= render 'layouts/flash' %>
+    <div class = "container" >
+      <%= render 'layouts/flash' %>
       <%= yield %>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
+    </div>
   </body>
 </html>
+
+
