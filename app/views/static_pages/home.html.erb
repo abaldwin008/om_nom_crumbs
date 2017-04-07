@@ -3,5 +3,10 @@
     <h1>Home</h1>
     <p>This home page is currently under construction! Stay tuned for updates! <p>
     
-    <%= link_to "Sign up now!", class: "btn btn-primary" %>
+    <% if logged_in? %>
+        
+    <% else %>
+         
+         <%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
+    <% end %>
 
