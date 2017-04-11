@@ -29,7 +29,7 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'second-rails-tutorial.c9.users.io'
+  host = 'second-rails-tutorial-abaldwin008.c9users.io'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
   config.action_mailer.perform_caching = false
 
