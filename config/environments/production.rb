@@ -62,7 +62,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_mothd = :setup
   host = 'secure-hamlet-23227.herokuapp.com'
-  congig.action_mailer.default_url_options = { host: host }
+  config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smpt_settings = { 
     :address              =>  'smpt.sendgrid.net',
     :port                 =>  '587',
